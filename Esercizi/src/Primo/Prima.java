@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Prima {
     public static void main(String[] args) {
     	int liczba;
+    	System.out.println("Podaj liczbe calkowita: ");
     	try {
-    		System.out.println("Podaj liczbe calkowita: ");
     		Scanner tekst = new Scanner(System.in);
     		liczba = Integer.parseInt(tekst.nextLine());
     		tekst.close();
