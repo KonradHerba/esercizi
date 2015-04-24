@@ -1,7 +1,7 @@
 package Primo;
 
 import java.util.Scanner;
-
+//temporary branch
 public class Prima {
     public static void main(String[] args) {
     	int liczba;
