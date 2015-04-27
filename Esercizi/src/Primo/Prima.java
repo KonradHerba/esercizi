@@ -1,7 +1,8 @@
+
 package Primo;
 
 import java.util.Scanner;
-//temporary branch - blablabla
+
 public class Prima {
     public static void main(String[] args) {
     	int liczba;
@@ -16,10 +17,23 @@ public class Prima {
         	System.out.println("Zly format!");
         	liczba = 0;
         	}
-
+    	
+    	int dlugosc = String.valueOf(liczba).length();
+    	
+    	System.out.println("Liczba ma cyfr:");
+    	System.out.println(dlugosc);
+    	System.out.println("Wypisuje cyfry:");
+    	
+    	// tutaj jest blad do poprawy w domu
     	while (liczba > 0){
+    		int cyfra = 0; 
+    		cyfra = (liczba - cyfra % (10 ^ dlugosc)) / (10 ^ dlugosc); 
+    		
     		System.out.println(liczba);
-    		liczba = 0;
+    		System.out.println(cyfra);
+    		liczba = liczba - cyfra * 10 ^ dlugosc;
+    		dlugosc = dlugosc - 1;
     	}
+    	//System.out.println(liczba);
    	}
 }
