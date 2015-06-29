@@ -36,4 +36,5 @@ public class Prima {
     	}
     	//System.out.println(liczba);
    	}
+    // comment z eclipsa
 }
